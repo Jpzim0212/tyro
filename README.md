@@ -351,9 +351,9 @@ curl -X DELETE http://localhost/api/roles/4/privileges/2 \
 	-H "Authorization: Bearer ${TOKEN}"
 ```
 
-### Privilege-driven authorization (Tyro 2.0)
+### Privilege-driven authorization
 
-Tyro 2.0 introduces first-class privileges that belong to roles. Each privilege is a reusable capability such as `report.generate` or `billing.view`. Roles now own any number of privileges, and the `HasTyroRoles` trait exposes a Laravel-style `can()` helper so you can evaluate privileges anywhere:
+Tyro introduces first-class privileges that belong to roles. Each privilege is a reusable capability such as `report.generate` or `billing.view`. Roles now own any number of privileges, and the `HasTyroRoles` trait exposes a Laravel-style `can()` helper so you can evaluate privileges anywhere:
 
 ```php
 if ($request->user()->can('report.generate')) {
@@ -369,7 +369,7 @@ Tyro keeps everything synced through three layers:
 
 Tokens automatically inherit abilities for every privilege on the user's roles, so no additional middleware changes are required.
 
-### User suspension (Tyro 2.1)
+### User suspension
 
 Tyro now ships with first-class user suspension support so you can freeze accounts without deleting them:
 
