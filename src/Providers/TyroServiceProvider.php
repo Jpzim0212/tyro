@@ -54,6 +54,13 @@ use HasinHayder\Tyro\Http\Middleware\EnsureTyroRole;
 use HasinHayder\Tyro\Http\Middleware\TyroLog;
 use HasinHayder\Tyro\Models\Privilege;
 use HasinHayder\Tyro\Models\Role;
+use HasinHayder\Tyro\View\Directives\UserCanDirective;
+use HasinHayder\Tyro\View\Directives\UserHasAnyPrivilegeDirective;
+use HasinHayder\Tyro\View\Directives\UserHasAnyRoleDirective;
+use HasinHayder\Tyro\View\Directives\UserHasPrivilegeDirective;
+use HasinHayder\Tyro\View\Directives\UserHasPrivilegesDirective;
+use HasinHayder\Tyro\View\Directives\UserHasRoleDirective;
+use HasinHayder\Tyro\View\Directives\UserHasRolesDirective;
 use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
@@ -71,6 +78,7 @@ class TyroServiceProvider extends ServiceProvider {
         $this->registerMiddleware();
         $this->registerBindings();
         $this->registerCommands();
+        $this->registerBladeDirectives();
 
         if ($this->app->runningInConsole()) {
             $this->loadMigrationsFrom(__DIR__ . '/../../database/migrations');
@@ -200,5 +208,15 @@ class TyroServiceProvider extends ServiceProvider {
             VersionCommand::class,
 
         ]);
+    }
+
+    protected function registerBladeDirectives(): void {
+        UserCanDirective::register();
+        UserHasRoleDirective::register();
+        UserHasAnyRoleDirective::register();
+        UserHasRolesDirective::register();
+        UserHasPrivilegeDirective::register();
+        UserHasAnyPrivilegeDirective::register();
+        UserHasPrivilegesDirective::register();
     }
 }
