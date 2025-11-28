@@ -6,11 +6,11 @@ use Illuminate\Support\Facades\Blade;
 
 class UserHasRoleDirective {
     /**
-     * Register the @hasRole Blade directive.
+     * Register the @hasrole Blade directive.
      * Checks if the current user has a specific role.
      */
     public static function register(): void {
-        Blade::if('hasRole', function (string $role) {
+        Blade::if('hasrole', function (string $role) {
             $user = auth()->user();
 
             if (!$user) {

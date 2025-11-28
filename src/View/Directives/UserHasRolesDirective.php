@@ -6,11 +6,11 @@ use Illuminate\Support\Facades\Blade;
 
 class UserHasRolesDirective {
     /**
-     * Register the @hasRoles Blade directive.
+     * Register the @hasroles Blade directive.
      * Checks if the current user has all of the provided roles.
      */
     public static function register(): void {
-        Blade::if('hasRoles', function (...$roles) {
+        Blade::if('hasroles', function (...$roles) {
             $user = auth()->user();
 
             if (!$user || !method_exists($user, 'hasRoles')) {

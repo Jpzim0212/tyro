@@ -6,11 +6,11 @@ use Illuminate\Support\Facades\Blade;
 
 class UserHasPrivilegeDirective {
     /**
-     * Register the @hasPrivilege Blade directive.
+     * Register the @hasprivilege Blade directive.
      * Checks if the current user has a specific privilege.
      */
     public static function register(): void {
-        Blade::if('hasPrivilege', function (string $privilege) {
+        Blade::if('hasprivilege', function (string $privilege) {
             $user = auth()->user();
 
             if (!$user) {

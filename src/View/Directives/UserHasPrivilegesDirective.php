@@ -6,11 +6,11 @@ use Illuminate\Support\Facades\Blade;
 
 class UserHasPrivilegesDirective {
     /**
-     * Register the @hasPrivileges Blade directive.
+     * Register the @hasprivileges Blade directive.
      * Checks if the current user has all of the provided privileges.
      */
     public static function register(): void {
-        Blade::if('hasPrivileges', function (...$privileges) {
+        Blade::if('hasprivileges', function (...$privileges) {
             $user = auth()->user();
 
             if (!$user || !method_exists($user, 'hasPrivileges')) {
