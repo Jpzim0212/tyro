@@ -11,15 +11,26 @@ class AboutCommand extends BaseTyroCommand {
         $version = config('tyro.version', 'unknown');
 
         $this->info('Tyro for Laravel');
-        $this->line(str_repeat('-', 40));
+        $this->line(str_repeat('-', 50));
         $this->line('• Version: ' . $version);
         $this->line('• Author: Hasin Hayder (@hasinhayder)');
-        $this->line('• Description: Tyro ships a production-ready Laravel API surface with authentication, authorization and powerful CLI commands in minutes.');
-        $this->line('• Auth stack: login, registration, profile, roles, privileges, and Sanctum tokens with abilities auto-derived from role + privilege slugs.');
-        $this->line('• Security rails: user suspension CLI + REST endpoints that revoke every active token the moment an account is frozen.');
-        $this->line('• Automation toolbox: 40+ `tyro:*` commands for onboarding, seeding, logouts, audits, and now quick-token safety checks.');
-        $this->line('• Docs + samples: seeders, factories, a Postman collection, and a README packed with route + middleware examples.');
+        $this->newLine();
+        $this->line('Tyro is the ultimate Authentication, Authorization, and');
+        $this->line('Role & Privilege Management solution for Laravel 12.');
+        $this->newLine();
+        $this->line('✓ Complete role-based access control (RBAC)');
+        $this->line('✓ Fine-grained privilege management');
+        $this->line('✓ User suspension workflows with token revocation');
+        $this->line('✓ 40+ CLI commands for automation & incident response');
+        $this->line('✓ Blade directives for clean, readable templates');
+        $this->line('✓ Ready-to-use middleware for route protection');
+        $this->line('✓ Optional REST API for remote management');
+        $this->line('✓ Sanctum integration with auto-derived abilities');
+        $this->newLine();
+        $this->line('Works for APIs, web apps, and hybrid applications.');
+        $this->newLine();
         $this->line('• GitHub: https://github.com/hasinhayder/tyro');
+        $this->line('• Run `tyro:doc` to open documentation');
 
         return self::SUCCESS;
     }

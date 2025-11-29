@@ -10,7 +10,7 @@ class InstallCommand extends BaseTyroCommand {
         {--force : Pass the --force flag to migrate}
         {--dry-run : Print the steps without executing install:api or migrate}';
 
-    protected $description = 'Run install:api followed by migrate to bootstrap Tyro\'s requirements';
+    protected $description = 'Bootstrap Tyro: set up Sanctum, run migrations, seed roles/privileges, and prepare your User model';
 
     public function handle(): int {
         if ($this->option('dry-run')) {
